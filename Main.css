@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@900&family=Syncopate:wght@700&display=swap');
+
+
+.SpanOneLogoStart {
+ z-index:20;
+ /* visibility: hidden; */
+animation: SpanOneLogoStartAnim 2s ease-in-out 1 forwards;
+/* line-height: 0; */
+
+}
+
+.OneLogoStart {
+    z-index: 20;
+ color: #ffffff;
+ font-size: 50px;
+ font-weight: 900;
+ font-family: 'Inter', sans-serif;
+ -webkit-font-smoothing: antialiased;
+ /* padding-top: 20%; */
+ letter-spacing: 0px;
+ opacity: 1;
+ animation: OneStart 2s ease-in 1 forwards;
+} 
+
+@keyframes OneStart {
+  0% {
+    opacity: 0.2;
+    transform: translateY(3px);
+    filter: blur(0);
+  }
+  /* Плавное проявление и начало подъема */
+  25% {
+    opacity:1;
+    transform: translateY(3px);
+    /* filter: blur(2px); */
+  }
+  /* Пик: 7px вверху и максимальный блюр */
+  50% {
+    opacity: 1;
+    /* transform: translateY(-7px); */
+    filter: blur(4px);
+  }
+  /* Плавный спуск и возвращение четкости */
+  75% {
+    opacity: 1;
+    /* transform: translateY(-2px); */
+    filter: blur(1px);
+  }
+  /* Финальное затухание в исходной точке */
+  100% {
+    opacity: 0;
+    transform: translateY(2px);
+    filter: blur(0);
+  }
+} 
+
+@keyframes SpanOneLogoStartAnim {
+    0%{
+          display: flex;
+    align-items: center;
+ justify-content: center;
+    }
+      100%{
+       visibility: hidden;
+    }
+}
+
+/* 
+.welcomeHome {
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+ -webkit-font-smoothing: antialiased;
+text-shadow: 0px 0px 20px rgb(255, 255, 255, 0.5);
+animation: welcomeFormSpanAnim 0.5s ease-in-out 1 forwards;
+ animation-delay: 2s;
+display: none;
+} */
+
+@keyframes welcomeFormSpanAnim {
+    0% {
+      visibility: visible;
+        opacity: 0;
+          display: flex;
+    /* align-items: center; */
+ justify-content: center;
+ /* padding-top: 2%;                          ПОКА НЕ НУЖНО  */
+    }
+    100% { opacity: 1;
+/* padding-top: 0%; */
+visibility: visible;
+    }
+}
+
+.welcomeHomeSpan {
+  /* 1. Состояние "полного отсутствия" на старте */
+  opacity: 0;
+  visibility: hidden;
+  height: 0vh;
+  overflow: hidden;
+  pointer-events: none; /*                     ПОКА НЕ НУЖНО */
+
+display: none;
+
+font-size: 15px;
+font-weight: 900;
+z-index: 1;
+          display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+  /* 2. Запуск "оживления" через 2 секунды */
+  /* Название | Длительность (мгновенно) | Задержка | Сохранить результат */
+ 
+}
+
+@keyframes wakeUp {
+  to {
+    opacity: 1;
+    visibility: visible;
+    height: auto;         /* Или 100vh, если он на весь экран */
+    overflow: visible;
+    pointer-events: auto;
+    display: flex;
+     justify-content: center;
+  }
+}
+
+
+
+
+
+.Karta-home-div {
+  display: flex;
+    /* align-items: start; */
+ justify-content: center;
+ overflow: hidden;
+ z-index: 0;  
+ height: 30%;
+ border-radius: 2rem ;
+  max-height: 19rem;
+ max-width: 100rem;
+ padding-bottom: 2rem;
+ padding-top: 4rem;
+ margin-bottom: 0.5rem;
+ z-index: 0;
+ margin-top: -2rem;
+ 
+ /* background-size: cover;
+ background-position: center;
+background-repeat: no-repeat;
+position: relative; */
+opacity: 1;
+/*  
+background: 
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%); */
+/* 
+  linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.08) 20.5%, transparent 21%),
+  linear-gradient(200deg, transparent 55%, rgba(255, 255, 255, 0.06) 55.5%, transparent 56%),
+  
+  linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.05) 40.5%, transparent 41%),
+  linear-gradient(300deg, transparent 75%, rgba(255, 255, 255, 0.07) 75.5%, transparent 76%),
+  linear-gradient(160deg, transparent 10%, rgba(255, 255, 255, 0.04) 10.5%, transparent 11%),
+   */
+  /* linear-gradient(80deg, transparent 30%, rgba(255, 255, 255, 0.03) 30.3%, transparent 30.6%),
+  linear-gradient(240deg, transparent 60%, rgba(255, 255, 255, 0.03) 60.3%, transparent 60.6%),
+  linear-gradient(340deg, transparent 85%, rgba(255, 255, 255, 0.04) 85.3%, transparent 85.6%),
+  linear-gradient(15deg, transparent 50%, rgba(255, 255, 255, 0.02) 50.3%, transparent 50.6%), */
+
+  /* radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%); */
+
+/* Добавляем зеркальную рамку и тени для объема */
+/* box-shadow: 
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), 
+  inset 0 -2px 10px rgba(0, 0, 0, 1),    
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);  
+/* 
+
+border: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+filter: blur(0px); */
+}
+
+
+
+.About-start-text{
+  color: #ffffff;
+  background-image: url('/bg.jpg') ;
+ background-size: cover;
+ background-position: center;
+background-repeat: no-repeat;
+}
+
+.Karta-home-button-h5 {
+text-align: center;
+color: #ffffff;
+opacity: 0.6;
+}
+
+.Karta-home-button-h1 {
+text-align: start ;
+color: transparent;
+/* opacity: 0; */
+font-weight: 800;
+font-size: 3.6rem;
+}
+.Karta-home-button-balance{
+  opacity: 1;
+-webkit-text-stroke: 1px #ffffff;
+text-shadow: 0px 0px 30px rgb(201, 201, 201);
+}
+.Karta-home-button-h1{
+  display: flex;
+align-items: center;
+}
+
+
+.Karta-home-button-span {
+text-align: end ;
+color: transparent;
+paint-order: stroke fill;
+stroke-linejoin: round;
+opacity: 0.6;
+font-weight: 800;
+font-size: 7rem;
+margin-left: auto;
+-webkit-text-stroke: 1px #ffffff;
+/* -webkit-background-clip: text;
+background-clip: text; */
+text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+}
+
+.Karta-home-button {
+   /* text-align: start; */
+position: relative;
+width: 85%;
+text-decoration: none;
+ font-family: 'Inter', sans-serif;
+ -webkit-font-smoothing: antialiased;
+border-radius: 15px;
+overflow: hidden;
+margin-bottom: -1rem;
+   background-image: url('/bg.jpg') ;
+ background-size: cover;
+ background-position: center;
+background-repeat: no-repeat;
+z-index: 3;
+/* Добавляем зеркальную рамку и тени для объема */
+box-shadow: 
+0px 0px 10px rgb(255, 255, 255, 0.5),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1);    /* Глубина внутри */
+  /* 0 2px 4px 1px rgba(0, 0, 0, 0.8);     Тень под картой */
+
+border: 2px solid rgba(255, 255, 255, 0.6);
+/* background-image: 
+  linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+  linear-gradient(225deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+  linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%), 
+  linear-gradient(315deg, rgba(255,255,255,0.05) 25%, transparent 25%),
+  linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+background-size: 4px 4px, 4px 4px, 4px 4px, 4px 4px, 100% 100%; */
+ backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+opacity: 1;
+}
+
+.sidebar {
+  position: relative; /* Создаем систему координат для слоев */
+  overflow: hidden;   /* Чтобы размытые края фона не вылезали за границы */
+  border-radius: 1.2rem;
+  margin-top: -2rem;
+}
+
+.sidebar-background {
+  position: absolute; /* Растягиваем фон на весь родитель */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  /* ПРИМЕНЯЕМ БЛЮР ТОЛЬКО СЮДА */
+  filter: blur(10px); 
+  
+  /* ВАЖНО: увеличиваем масштаб на 10%, чтобы скрыть 
+     белые края, которые появляются при размытии */
+  transform: scale(1.1); 
+  
+  z-index: 1; /* Фон на нижнем слое */
+}
+
+
+.Karta-home-link-about{
+  height: 30%;
+  width: 80%;
+ z-index: 5;
+ position: absolute;
+ opacity: 0;
+ margin-top: 0.5rem;
+ backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
+.Karta-home-link-home{
+  opacity: 0;
+}
+
+
+
+.Send-svg{
+  position: relative;
+  width: 3.9rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+/* 
+.Send-text{
+text-align: center;
+} */
+
+.Send-div {
+    box-shadow: 
+    0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+height: 3.9rem;
+width: 3.9rem;
+border-radius: 0.7rem;
+border: 1px solid #ffffff;
+color: #ffffff;
+}
+
+.Add-svg{
+  position: relative;
+  width: 3.9rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+/* 
+.Add-text{
+text-align: center;
+} */
+
+.Add-div {
+box-shadow: 
+0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+
+height: 3.9rem;
+width: 3.9rem;
+border-radius: 0.7rem;
+border: 1px solid #ffffff;
+color: #ffffff;
+}
+.Reqest-svg{
+  position: relative;
+height: 3.6rem;
+width: 3.57rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.Reqest-text{
+text-align: center;
+} */
+
+.Reqest-div {
+box-shadow: 
+0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+
+height: 3.9rem;
+width: 3.9rem;
+border-radius: 0.7rem;
+border: 1px solid #ffffff;
+color: #ffffff;
+}
+
+.Freeze-svg{
+  position: relative;
+height: 3.9rem;
+width: 3.8rem;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+/* 
+.Freeze-text{
+text-align: center;
+} */
+
+.Freeze-div {
+box-shadow: 
+0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+  
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+
+height: 3.9rem;
+width: 3.9rem;
+border-radius: 0.7rem;
+border: 1px solid #ffffff;
+color: #ffffff;
+
+}
+
+.Fast-button{
+  display: flex;
+ /* overflow: hidden; */
+ justify-content: space-evenly;
+ align-items: center;
+ padding-top: 1.7rem;
+ width: 100%;
+ box-sizing: border-box; 
+ text-align: center;
+ position: relative;
+}
+
+
+.X{
+  background-color: #3B82F6;
+height: 100%;
+width: 100%;
+  grid-area: side;
+   border-radius: 1rem;
+    box-shadow: 
+    0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+ border: 2px solid #ffffff;
+}
+
+.X{
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+   border-radius: 1rem;
+    box-shadow: 
+    0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+ border: 2px solid #ffffff;
+}
+
+.X{
+background-color: chartreuse;
+height: 100%;
+width: 100%;
+ border-radius: 1rem;
+  box-shadow: 
+    0px 0px  15px rgb(255, 255, 255, 0.3),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), /* Острый блик на грани */
+  inset 0 -2px 10px rgba(0, 0, 0, 1),       /* Глубина внутри */
+  0 20px 40px -10px rgba(0, 0, 0, 0.8);
+
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+ border: 2px solid rgb(255, 255, 255) ;
+}
+
+
+.X {
+  display: grid;
+  padding-top: 2rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem ;
+  grid-template-columns: 1fr 1fr; 
+  /* Два ряда одинаковой высоты */
+  grid-template-rows: 1fr 1fr; 
+  /* Соединяем левые ячейки в одну большую полосу */
+  grid-template-areas: 
+    "side top"
+    "side bottom";
+  max-width: 95rem;
+  max-height: 30rem;
+  gap: 1rem;
+  aspect-ratio: 4 / 4; 
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+/* Контейнер для центровки на странице */
+.home-activ-goal-parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Синяя карточка */
+.home-activ-goal {
+  display: flex;
+  justify-content: space-between; /* Текст слева, кнопка справа */
+  align-items: center;            /* Ровно по центру по вертикали */
+  
+  width: 90%;
+  max-width: 95rem;
+  min-height: 7.5rem;
+  margin-top: 3rem;
+  padding: 0 1.5rem;
+  
+  background-color: #000000;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.3);
+}
+
+/* Группа текста */
+.home-goal-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-goal-text-h1 {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.home-goal-text-h3 {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* Кнопка-контейнер для плюса */
+.home-goal-plus-btn {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 0.8rem;
+  overflow: hidden; /* Чтобы блюр не вылезал */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+   box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.4);
+}
+
+/* Размытый фон внутри кнопки */
+.home-goal-plus-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  transform: scale(1.2); /* Убираем белые края блюра */
+  z-index: 1;
+}
+
+/* Сам SVG поверх фона */
+.home-goal-plus-svg {
+  position: relative;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+}
+
+.lend-wallet{
+stroke: #ffffff;
+stroke-width: 0.1px;
+fill: none;
+paint-order: stroke fill;
+opacity: 1;
+filter: drop-shadow(0px, 0px, 30px rgba(255, 255, 255, 1));
+}
+
+.lend-portfolio{
+  stroke: #ffffff;
+stroke-width: 0.1px;
+fill: none;
+paint-order: stroke fill;
+opacity: 1;
+}
+
+.lend-seting{
+  opacity: 1;
+}
+
+.lend{  
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  overflow: hidden;
+padding-top: 0.8rem ;
+padding-bottom: 0.2rem;
+border-radius: 1rem;
+/* box-shadow: 
+    0px 0px  15px rgb(255, 255, 255, 0.5),
+  inset 0 1px 1px rgba(255, 255, 255, 0.5), 
+  inset 0 -2px 10px rgba(0, 0, 0, 1),  
+  0 20px 40px -10px rgba(0, 0, 0, 0.8); */
+
+/* 
+background:
+  linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 40%, transparent 60%),
+ radial-gradient(circle at top left, #2b2b2b 0%, #000000 100%);
+ border: 1px solid rgb(255, 255, 255, 0.9) ;
+  */
+  background-color: transparent ;
+}
+
+
+.lend-div{
+   display: flex;
+    /* align-items: start; */
+ justify-content: center;
+ z-index: 0;  
+ height: 100%;
+margin-top: 2rem ;
+padding-top: 0rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem ;
+padding-bottom: 1rem;
+width: 100%;
+  height: 100%;
+  max-width: 100rem; 
+  max-height: 6rem;
+  border-radius: 2rem ;
+  border-top: 1px solid rgb(255, 255, 255, 0.2) ;
+  box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.2);
+}
+
+
+
+/* 
+ /* --- Banana Bank Component Styles --- */
+/* 
+/* Локальные переменные для легкой настройки */
+.banana-login-wrapper {
+    --bb-bg-card: #0F1115;       /* Цвет карты */
+    --bb-border: #27272A;        /* Цвет границ */
+    --bb-accent: #3B82F6;        /* Акцент (Hacks Blue) */
+    --bb-text-main: #FFFFFF;     /* Белый текст */
+    --bb-text-muted: #9CA3AF;    /* Серый текст */
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    z-index: 10;
+     animation: wakeUp 0.01s forwards;
+     animation-delay: 2.1s;
+      opacity: 0;
+  visibility: hidden;
+  height: 0vh;
+  overflow: hidden;
+  pointer-events: none; 
+}
+
+.banana-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background: rgba(15, 17, 21, 0.85); 
+    border: 1px solid var(--bb-border);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Светящаяся линия сверху */
+.banana-hacks-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--bb-accent), transparent);
+    box-shadow: 0 0 15px var(--bb-accent);
+}
+
+/* Логотип */
+.banana-brand {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    /* Металлический градиент */
+    background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.banana-subtitle {
+    text-align: center;
+    color: var(--bb-text-muted);
+    font-size: 14px;
+    margin-bottom: 35px;
+    font-weight: 500;
+}
+
+/* Поля */
+.banana-input-group {
+    margin-bottom: 24px;
+}
+
+.banana-input-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--bb-text-muted);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.banana-input {
+    width: 100%;
+    background: #09090b; 
+    border: 1px solid var(--bb-border);
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--bb-text-main);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.banana-input:focus {
+    border-color: var(--bb-accent);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+    background: #0d1016;
+}
+
+.banana-input::placeholder {
+    color: #3f3f46;
+}
+
+/* Кнопка */
+.banana-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--bb-text-main);
+    color: #000;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 10px;
+}
+
+.banana-btn:hover {
+    background: var(--bb-accent);
+    color: white;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+    transform: translateY(-1px);
+}
+
+/* Ссылка */
+.banana-link {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #52525b;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.banana-link:hover {
+    color: var(--bb-text-muted);
+}  
+
+
+@media (min-width: 768px) { 
+  .lend-div{
+    max-height: 7rem;
+  }
+
+}
+
+
+
+
+
+
+body {
+     /* background-color: #121212;
+      */
+      background-color: #000000;
+     /* background-color: #161618;  */
+     /* background-color: 1c1c1c;     */
+     overflow: hidden;
+     
+} 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; 
+ }
+ 
