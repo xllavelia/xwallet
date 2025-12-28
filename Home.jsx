@@ -227,7 +227,7 @@ return (
   {Number(btcRate).toLocaleString('en-US')} $
 </span> <span className="home-span-btc">btc</span></h1>
 </div> */}
-{/* 
+
 
 <div className="lend-div">
 <div className="lend">
@@ -247,7 +247,7 @@ return (
 </g>
 </svg>
 </div>
-</div> */}
+</div>
 
     </div>
   );

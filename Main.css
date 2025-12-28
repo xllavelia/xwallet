@@ -876,9 +876,10 @@ background:
    display: flex;
     /* align-items: start; */
  justify-content: center;
+ flex: 1;
  z-index: 0;  
  height: 100%;
-margin-top: 2rem ;
+margin-top: 6rem;
 padding-top: 0rem;
 padding-left: 1.5rem;
 padding-right: 1.5rem ;
@@ -889,7 +890,7 @@ width: 100%;
   max-height: 6rem;
   border-radius: 2rem ;
   border-top: 1px solid rgb(255, 255, 255, 0.2) ;
-  box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.2);
+  /* box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.2); */
 }
 
 
@@ -1049,15 +1050,6 @@ width: 100%;
 }  
 
 
-@media (min-width: 768px) { 
-  .lend-div{
-    max-height: 7rem;
-  }
-
-}
-
-
-
 
 
 
@@ -1068,7 +1060,7 @@ body {
      /* background-color: #161618;  */
      /* background-color: 1c1c1c;     */
      overflow: hidden;
-     
+  
 } 
 * {
   margin: 0;
