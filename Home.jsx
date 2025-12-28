@@ -1,5 +1,9 @@
 import React, {useState, useEffect } from "react";
 
+// git add .
+// git commit -m "added progress row with percent"
+// git push origin master
+
 const Home = () => {
   
 const [usdRate, setUsdRate] = useState(0); // Курс доллара
@@ -138,6 +142,44 @@ return (
 
   </div>
 </div>
+
+
+<div className="home-activ-history-parent">
+
+     {/* <button className="home-history-st-btn">
+      <div className="home-history-st-bg"></div>
+     
+    </button> */}
+    <fieldset className="home-activ-history">
+    <legend>
+         <span className="home-history-text-span-pr">75%</span>
+   
+</legend>
+ 
+    {/* Левая часть: Текстовый блок outcomes*/}
+   <div className="home-history-text">
+    <h1 className="home-history-text-h1">
+    
+            Incomes      <svg fill="#ffffffff" width="" height="" className="home-history-st-svg" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>angle-top</title>
+<path d="M0.84 20.040c-0.2 0-0.44-0.080-0.6-0.24-0.32-0.32-0.32-0.84 0-1.2l6.44-6.44c0.32-0.32 0.88-0.32 1.2 0l6.44 6.44c0.32 0.32 0.32 0.84 0 1.2-0.32 0.32-0.84 0.32-1.2 0l-5.84-5.84-5.84 5.84c-0.16 0.16-0.4 0.24-0.6 0.24z"></path>
+</svg>
+   
+        <span className="home-history-text-span">7.500$</span>
+    </h1>
+
+ <div className="home-history-text-graf-grandparent">
+    <div className="home-history-text-graf-parent">
+        <div className="home-history-text-graf"></div>
+        
+    </div>
+</div>
+
+</div>
+    {/* Правая часть: Кнопка сo стрелкой */}
+   </fieldset>
+  </div>
+
 {/* <div className="home-ustd">
 <h1  className="let-ustd"> {usdRate} ₽ <span  className="home-span-ustd">ustd</span></h1>
 </div>
