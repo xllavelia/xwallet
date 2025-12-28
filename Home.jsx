@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from "react";
 
 // git add .
-// git commit -m "added progress row with percent"
+//  git commit -m "added progress row with percent"
 // git push origin master
 
 const Home = () => {
