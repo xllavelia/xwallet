@@ -685,7 +685,7 @@ display: inline;
 
 .home-history-text-graf {
   margin: 0;
-  background-color: #086a2a;
+  background: linear-gradient(135deg, #217374, #06895f);
   height: 100%; /* Пусть заполняет родителя по высоте */
   width: 75%;
   border-radius: 1rem;
@@ -696,8 +696,111 @@ display: inline;
 }
 
 .home-history-text-span-pr{
-  background: linear-gradient(135deg,#00571d, #004740);
+  background: linear-gradient(135deg,#01571e, #055d54);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(12, 118, 137, 0.7);
+}
 
+
+
+
+
+.home-out-activ-history-parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* карточка */
+.home-out-activ-history {
+  display: flex; 
+  align-items: center;        
+  width: 90%;
+  max-width: 95rem;
+  min-height: 7rem;
+  margin-top: 3rem;
+  padding: 0.9rem 0.5rem;
+  
+  background-color: #000000;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+  /* box-shadow: 0px 0px 15px rgb(255, 255, 255, 0.3); */
+}
+
+
+
+/* Группа текста (контейнер) */
+.home-out-history-text {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 0;
+  max-height: 6.5rem;
+  /* ВАЖНО: Растягиваем контейнер на всю ширину, чтобы цене было куда двигаться */
+  width: 100%; 
+  margin-right: 0rem; /* Небольшой отступ от круглой кнопки справа, если она есть */
+}
+
+/* Строка с заголовком, иконкой и ценой */
+.home-out-history-text-h1 {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+  margin: 0;
+  
+  /* ВАЖНО: Включаем Flexbox для одной строки */
+  display: flex;
+  align-items: center; /* Центрируем всё по вертикали */
+  width: 100%;
+}
+
+.home-out-history-st-svg{
+  width: 2.5rem;
+}
+
+/* Цена (7.500$) */
+.home-out-history-text-span {
+  text-align: right;
+  position: relative;
+  /* Цвет и шрифт наследуются от h1, но можно задать свои */
+  white-space: nowrap; /* Чтобы цена не переносилась */
+}
+
+.home-out-history-text-graf-grandparent{
+display: inline;
+}
+
+.home-out-history-text-graf-parent {
+  height: 0.6rem;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 95rem;
+   /* Чуть отделим полоску от текста */ 
+   margin-top: 0.3rem;
+ 
+  }
+
+.home-out-history-text-graf {
+  margin: 0;
+  background: linear-gradient(135deg, #217374, #06895f);
+  height: 100%; /* Пусть заполняет родителя по высоте */
+  width: 25%;
+  border-radius: 1rem;
+}
+
+.home-out-history-text-span{
+   margin-left: auto;
+}
+
+.home-out-history-text-span-pr{
+  background: linear-gradient(135deg,#01571e, #055d54);
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   font-size: 100%;

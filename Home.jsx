@@ -180,6 +180,43 @@ return (
    </fieldset>
   </div>
 
+  
+<div className="home-out-activ-history-parent">
+
+     {/* <button className="home-history-st-btn">
+      <div className="home-history-st-bg"></div>
+     
+    </button> */}
+    <fieldset className="home-out-activ-history">
+    <legend>
+         <span className="home-out-history-text-span-pr">25%</span>
+   
+</legend>
+ 
+    {/* Левая часть: Текстовый блок outcomes*/}
+   <div className="home-out-history-text">
+    <h1 className="home-out-history-text-h1">
+    
+            Outcomes      <svg fill="#ffffffff" width="" height="" className="home-out-history-st-svg" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>angle-top</title>
+<path d="M0.84 20.040c-0.2 0-0.44-0.080-0.6-0.24-0.32-0.32-0.32-0.84 0-1.2l6.44-6.44c0.32-0.32 0.88-0.32 1.2 0l6.44 6.44c0.32 0.32 0.32 0.84 0 1.2-0.32 0.32-0.84 0.32-1.2 0l-5.84-5.84-5.84 5.84c-0.16 0.16-0.4 0.24-0.6 0.24z"></path>
+</svg>
+   
+        <span className="home-out-history-text-span">2.500$</span>
+    </h1>
+
+ <div className="home-out-history-text-graf-grandparent">
+    <div className="home-out-history-text-graf-parent">
+        <div className="home-out-history-text-graf"></div>
+        
+    </div>
+</div>
+
+</div>
+    {/* Правая часть: Кнопка сo стрелкой */}
+   </fieldset>
+  </div>
+
 {/* <div className="home-ustd">
 <h1  className="let-ustd"> {usdRate} ₽ <span  className="home-span-ustd">ustd</span></h1>
 </div>
