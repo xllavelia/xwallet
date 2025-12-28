@@ -143,6 +143,7 @@ return (
   </div>
 </div>
 
+<div className="home-text-mr-parent"><h1 className="home-text-mr">Monthly Report</h1></div>
 
 <div className="home-activ-history-parent">
 
