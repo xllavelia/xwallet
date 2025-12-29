@@ -737,7 +737,7 @@ display: inline;
   width: 90%;
   max-width: 95rem;
   min-height: 7rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   padding: 0.9rem 0.5rem;
   
   background-color: #000000;
@@ -879,7 +879,7 @@ background:
  flex: 1;
  z-index: 0;  
  height: 100%;
-margin-top: 3rem;
+margin-top: 2.5rem;
 padding-top: 0rem;
 padding-left: 1.5rem;
 padding-right: 1.5rem ;
@@ -1049,6 +1049,23 @@ width: 100%;
     color: var(--bb-text-muted);
 }  
 
+
+
+@media (min-width: 768px) { 
+  .lend-div{
+ margin-top: 6rem;   
+  }
+.home-activ-goal-parent{
+  margin-top: 1rem;
+}
+.home-out-activ-history-parent{
+margin-top: 1rem;
+}
+
+.home-text-mr-parent{
+  margin-top: 2rem;
+}
+}
 
 
 
